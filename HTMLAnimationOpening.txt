@@ -1,0 +1,30 @@
+<style>
+#myContainer {
+  width: 10cm;
+  height: 10cm;
+  position: relative;
+  background: yellow;
+}
+#myAnimation {
+  width: 0.5cm;
+  height: 0.5cm;
+  -webkit-border-radius: 0.25cm;
+  -moz-border-radius: 0.25cm;
+  border-radius: 0.25cm;
+  position: absolute;
+  background-color: red;
+}
+</style>
+<body>
+<p>
+<button onclick="StartAnim()">Start</button> 
+<button onclick="StopAnim()">Stop</button> 
+</p>
+
+<div id ="myContainer">
+<div id ="myAnimation"></div>
+</div>
+
+<script>
+var elem = document.getElementById("myAnimation");
+var l=0;  

@@ -1,0 +1,24 @@
+
+elem.style.top =5-y[0]-0.25+'cm';
+elem.style.left =5+x[0]-0.25 +'cm';
+
+function StartAnim(){
+	l=0
+	id=setInterval(update , dtms);
+	function update() {
+	if (l<x.length){
+	elem.style.top =5-y[l]-0.25+'cm';
+	elem.style.left =5+x[l]-0.25 +'cm'}
+	else {clearInterval(id)}
+	l++;
+	}
+	
+}
+function StopAnim() {
+clearInterval(id);
+}
+</script>
+
+
+
+</body>
