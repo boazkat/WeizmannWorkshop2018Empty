@@ -1,3 +1,2 @@
 # TestBinder
-Try Binder
-HTMLAnimation
+This folder has several Jupyter Notebooks
