@@ -1,6 +1,6 @@
 from IPython.display import HTML
 global sOpn,sEnd,svarx,svary,sdtms
-def StartBall(x,y):
+def BallStart(x,y):
     global sOpn,sEnd,svarx,svary,sdtms,simulation
     file = open('BallAnimation/HTMLAnimationOpening.txt', 'r')
     sOpn=file.read()
@@ -10,11 +10,11 @@ def StartBall(x,y):
     file.close()
     svarx='\n var x=['+str(x)
     svary='\n var y=['+str(y)
-def MoveBallTo(x,y):
+def BallMoveTo(x,y):
     global svarx,svary
     svarx+=','+str(x)
     svary+=','+str(y)
-def RunBall(dts):
+def BallRun(dts=0.003):
     global sOpn,sEnd,svarx,svary,sdtms
     sdtms='\n var dtms='+'%.0f'%round(dts*1000)+';\n'
     svarx+=']; \n'
